@@ -19,10 +19,12 @@ public interface SetmealMapper {
 
     /**
      * 根据id修改套餐
+     *
      * @param setmeal
      */
-    @AutoFill(value = OperationType.UPDATE)
+    @AutoFill(OperationType.UPDATE)
     void update(Setmeal setmeal);
+
 
     /**
      * 根据id查询套餐
