@@ -19,3 +19,7 @@ sky:
   wechat:
     appid: wxf2f0cbda4cc4fcc3
     secret: 536352a0ce60a3d7ebe322c7c09a7336
+  shop:
+    address: 广州市广东财经大学
+  baidu:
+    ak: DNow7WpSu1QGQ4IO1Ed7PsIjwlCyo7bt

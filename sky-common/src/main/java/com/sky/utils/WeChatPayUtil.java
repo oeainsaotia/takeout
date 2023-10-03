@@ -42,14 +42,14 @@ public class WeChatPayUtil {
     public static final String REFUNDS = "https://api.mch.weixin.qq.com/v3/refund/domestic/refunds";
 
     @Autowired
-    private WeChatProperties weChatProperties;
+    private static WeChatProperties weChatProperties;
 
     /**
      * 获取调用微信接口的客户端工具对象
      *
      * @return
      */
-    private CloseableHttpClient getClient() {
+    private static CloseableHttpClient getClient() {
         PrivateKey merchantPrivateKey = null;
         try {
             //merchantPrivateKey商户API私钥，如何加载商户API私钥请看常见问题
@@ -79,7 +79,7 @@ public class WeChatPayUtil {
      * @param body
      * @return
      */
-    private String post(String url, String body) throws Exception {
+    private static String post(String url, String body) throws Exception {
         CloseableHttpClient httpClient = getClient();
 
         HttpPost httpPost = new HttpPost(url);
@@ -214,7 +214,7 @@ public class WeChatPayUtil {
      * @param total         原订单金额
      * @return
      */
-    public String refund(String outTradeNo, String outRefundNo, BigDecimal refund, BigDecimal total) throws Exception {
+    public static String refund(String outTradeNo, String outRefundNo, BigDecimal refund, BigDecimal total) throws Exception {
         JSONObject jsonObject = new JSONObject();
         jsonObject.put("out_trade_no", outTradeNo);
         jsonObject.put("out_refund_no", outRefundNo);
