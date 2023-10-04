@@ -46,7 +46,7 @@ public class CommonController {
             //构造新文件名称
             String objectName = UUID.randomUUID().toString() + extension;
             //文件的请求路径
-            file.transferTo(new File("D:\\image\\" + objectName));
+            file.transferTo(new File(ProjectPathConstant.STATIC_SOURCE + "image\\" + objectName));
             return Result.success("http://" + ProjectPathConstant.BACK_PATH +"/image/" + objectName);
         } catch (IOException e) {
             log.error("文件上传失败:{}",e);
