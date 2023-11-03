@@ -33,3 +33,8 @@ git clone https://github.com/oeainsaotia/takeout.git
 10.使用ApachePOI导出数据报表
 
 11.数据库读写分离,使用shareJDBC
+
+## 图片
+![屏幕截图 2023-11-03 115836](https://github.com/oeainsaotia/takeout/assets/71313598/557862ed-12f5-478e-a82e-ffff35908501)
+
+![屏幕截图 2023-11-03 100811](https://github.com/oeainsaotia/takeout/assets/71313598/b428e43b-86dc-451f-a895-89ede585e521)
